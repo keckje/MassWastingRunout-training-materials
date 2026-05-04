@@ -6,7 +6,7 @@ In this hands-on-clinic, participants simulate landslide runout and sediment tra
 
 By the end of this training, participants will have an understanding of how to setup and calibrate MWR to a field site. 
 
-Model inputs for the example field sites are available online at this [hydroshare][hydroshare] website. MWR can be run at most sites by preparing model inputs following the format of the example inputs. Step-by-step directions for preparing MWR inputs using ArcPro are described in A_step-by-step_guide_on_how_to_prepare_input_data_for_MWR.pdf
+Model inputs for the example field sites are available online at this [hydroshare][hydroshare] website. MWR can be run at most sites by preparing model inputs following the format of the example inputs. Step-by-step directions for preparing MWR inputs using ArcPro are described in Step-by-step_guide_for_preparing_MWR_inputs.pdf
 
 
  <!-- Links -->
