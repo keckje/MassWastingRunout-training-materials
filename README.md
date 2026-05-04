@@ -1,12 +1,12 @@
 # Simulating landslide sediment transport and runout hazard in Landlab using MassWastingRunout (MWR)
-This repository contains Jupyter notebooks, example model inputs and presentations for the Landlab MassWastingRunout Clinic at CSDMS in May 2026.
+This repository contains Jupyter notebooks, example model inputs and power point presentations for the Landlab MassWastingRunout Clinic at CSDMS in May 2026.
 
 Training description:
-In this hands-on training, participants simulate landslide runout and sediment transport patterns using the model MassWastingRunout (MWR). MWR is coded in Python and implemented as a component for the package Landlab. MWR uses runout algorithms typically found in landscape evolution and watershed sediment yield models to replicate the complex depositional and erosional behavior of actual landslides. It includes a calibration utility For a full description of MWR and the calibration utility refer to [Keck et al., 2024][esurf] 
+In this hands-on-clinic, participants simulate landslide runout and sediment transport patterns using the model MassWastingRunout (MWR). MWR is coded in Python and implemented as a component for the package Landlab. MWR uses runout algorithms typically found in landscape evolution and watershed sediment yield models to replicate the complex depositional and erosional behavior of actual landslides. It includes a calibration utility. For a full description of MWR and the calibration utility please refer to [Keck et al. (2024)][esurf] 
 
 By the end of this training, participants will have an understanding of how to setup and calibrate MWR to a field site. 
 
-Model inputs for the example field sites are are available online at this [hydroshare][hydroshare] website. MWR can be run at most sites by preparing model inputs following the format of the example inputs. Step-by-step directions for preparing MWR inputs using ArcPro are described in the 
+Model inputs for the example field sites are available online at this [hydroshare][hydroshare] website. MWR can be run at most sites by preparing model inputs following the format of the example inputs. Step-by-step directions for preparing MWR inputs using ArcPro are described in A_step-by-step_guide_on_how_to_prepare_input_data_for_MWR.pdf
 
 
  <!-- Links -->
