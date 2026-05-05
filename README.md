@@ -13,8 +13,7 @@ Model inputs for the example field sites are available online at this [hydroshar
 [badge]: https://img.shields.io/badge/Run%20on-EarthscapeHub-orange
 [help-desk]: https://csdms.github.io/help-desk/
 [jhub]: https://csdms.colorado.edu/wiki/JupyterHub
-[jhub-link]: https://explore.openearthscape.org/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fpfeiffea%2FNST-Clinic-CSDMS-2025&urlpath=tree%2FNST-Clinic-CSDMS-2025%2F&branch=main 
-
+[jhub-link]: https://explore.openearthscape.org/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fkeckje%2FMassWastingRunout-training-materials&urlpath=lab%2Ftree%2FMassWastingRunout-training-materials%2F%3Fautodecode&branch=main
 
 [jhub-info]: https://csdms.colorado.edu/wiki/JupyterHub
 [landlab]: https://landlab.readthedocs.io/en/latest/installation.html
