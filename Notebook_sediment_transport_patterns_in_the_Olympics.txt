@@ -1,3 +1,0 @@
-Use the Kunmaskt notebook
-User adjusts runout parameters and grain size
-Compare sediment transport patterns (as visualized by maps of topographic difference, (Qs) and grain size versus profile
