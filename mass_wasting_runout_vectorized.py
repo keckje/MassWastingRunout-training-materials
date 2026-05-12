@@ -5,10 +5,8 @@ import pandas as pd
 
 from landlab import Component
 from landlab.components import FlowDirectorMFD
-from landlab.components.mass_wasting_runout.mass_wasting_saver import MassWastingSaver
-
-##TODO
-# clean up
+#from landlab.components.mass_wasting_runout.mass_wasting_saver import MassWastingSaver
+from mass_wasting_saver import MassWastingSaver
 
 
 class MassWastingRunout(Component):
