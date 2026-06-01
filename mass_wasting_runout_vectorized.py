@@ -8,6 +8,7 @@ from landlab.components import FlowDirectorMFD
 #from landlab.components.mass_wasting_runout.mass_wasting_saver import MassWastingSaver
 from mass_wasting_saver import MassWastingSaver
 
+#TODO profile code, find slowest parts, convert those parts to cython using claude
 
 class MassWastingRunout(Component):
     """a cellular-automata mass wasting runout model that routes an initial mass
