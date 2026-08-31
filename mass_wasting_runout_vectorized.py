@@ -5,7 +5,6 @@ import pandas as pd
 
 from landlab import Component
 from landlab.components import FlowDirectorMFD
-#from landlab.components.mass_wasting_runout.mass_wasting_saver import MassWastingSaver
 from mass_wasting_saver import MassWastingSaver
 
 #TODO profile code, find slowest parts, convert those parts to cython using claude
@@ -368,11 +367,10 @@ class MassWastingRunout(Component):
 
         if len(critical_slope) > 1:
             self.variable_slpc = True
-            self.a = critical_slope[0]
-            self.b = critical_slope[1]
+            self.slpc = critical_slope[0] * self._grid.at_node["drainage_area"] ** critical_slope[1]
         else:
             self.variable_slpc = False
-            self.slpc = critical_slope[0]
+            self.slpc = np.ones(self._grid.number_of_nodes)*critical_slope[0]
         self.qsc = threshold_flux
         self.k = erosion_coefficient
         self._tracked_attributes = tracked_attributes
@@ -777,7 +775,7 @@ class MassWastingRunout(Component):
             qsi_ = qsi
         
         # critical slope
-        slpc = self.a * self._grid.at_node["drainage_area"][n] ** self.b if self.variable_slpc else np.full(len(n), self.slpc)
+        slpc = self.slpc[n] #self.a * self._grid.at_node["drainage_area"][n] ** self.b if self.variable_slpc else np.full(len(n), self.slpc)
         
         # incoming attributes
         if self._tracked_attributes:
@@ -1100,12 +1098,12 @@ class MassWastingRunout(Component):
         A_f : float
             aggradation depth [L]
         """
-        slp_h = self.slpc * self._grid.dx
+        slp_h = self.slpc[n] * self._grid.dx
         zi = self._grid.at_node["topographic__elevation"][n]
         zo = self._determine_zo_v(n, zi, qsi)
 
         dx = self._grid.dx
-        sc = self.slpc
+        sc = self.slpc[n]
         s = (zi - zo) / dx
         sd = sc - s
         D1 = sc * dx / 2
